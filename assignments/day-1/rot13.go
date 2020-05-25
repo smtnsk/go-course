@@ -2,8 +2,8 @@ package main
 
 import ( "fmt"; "os"; "strings" )
 
-const alphabet_lo string = "abcdefghijklmnopqrstuvwxzy"
-const alphabet_up string = "ABCDEFGHILKJMNOPQRSTUVWXZY"
+const alphabet_lo string = "abcdefghijklmnopqrstuvwxyz"
+const alphabet_up string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const alphabet_len int = len(alphabet_lo)
 
 func encode(str string) string {
