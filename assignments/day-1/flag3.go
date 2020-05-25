@@ -5,6 +5,7 @@ import ( "fmt"; "flag" )
 func main() {
         var name string
         var n int
+        
         flag.StringVar(&name, "name", "", "Who to greet")
         flag.IntVar(&n, "n", 0, "How many greetings")
         flag.Parse()
