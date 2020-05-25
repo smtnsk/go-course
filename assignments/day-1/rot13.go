@@ -10,7 +10,6 @@ func encode(str string) string {
 	ret_str := ""
 
 	var alphabet_i int
-
 	for i := 0; i < len(str); i++ {
 		if (str[i] >= 'a' && str[i] <= 'z') {
 			alphabet_i = strings.IndexRune(alphabet_lo, rune(str[i]))
@@ -34,7 +33,6 @@ func decode (str string) string {
 	ret_str := ""
 
 	var alphabet_i int
-
 	for i := 0; i < len(str); i++ {
 		if (str[i] >= 'a' && str[i] <= 'z') {
 			alphabet_i = strings.IndexRune(alphabet_lo, rune(str[i]))
