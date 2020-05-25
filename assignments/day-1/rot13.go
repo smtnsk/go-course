@@ -73,7 +73,7 @@ func main() {
 	case "decode":
 		fmt.Println(decode(os.Args[2]))
 	default:
-		fmt.Println("ERROR: Invalid argument")
+		fmt.Println("ERROR: Invalid argument.")
 		fmt.Println("Usage: rot13 (encode|decode) STRING")
 		os.Exit(1)
 	}
