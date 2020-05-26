@@ -66,3 +66,9 @@ Jos merkkijonot tulostettaisiin järjestyksessä, näkisimme tällä kertaa "You
 
 Tulos:\
 ![screenshot-10](/assignments/day-2/screenshots/waitgroup.png)
+
+---
+
+Kokeilin myös huvikseni pienentää binäärin kokoa riisumalla sen debug symboleista antamalla linkerille '-s' ja '-w' parametrit.\
+Binäärin koko pieneni n. 400 kilotavulla:\
+![screenshot-11](/assignments/day-2/screenshots/waitgroup-stripped.png)
