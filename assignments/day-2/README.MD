@@ -47,7 +47,7 @@ Tulos:
 
 #### <a id="tehtava2">2. Go By Example</a>
 
-Kokeilin [variadisia funktioita](https://gobyexample.com/variadic-functions), [gorutiineja](https://gobyexample.com/goroutines) ja lambdalausekkeita.
+Kokeilin [variadisia funktioita](https://gobyexample.com/variadic-functions), [gorutiineja](https://gobyexample.com/goroutines) ja lambdalausekkeita. Variadinen lambdagorutiini? Anonyymi variadinen gorutiini? Mene ja tiedä.
 
 [Lähdekoodi:](variadic-routines.go)
 
