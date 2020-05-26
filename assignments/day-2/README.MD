@@ -16,7 +16,7 @@ http://terokarvinen.com/2020/go-programming-course-2020-w22/#h2
 
 Käänsin yksinkertaisen Go-sovelluksen 32- ja 64-bittisenä Macille, Windowsille ja Linuxille. Kone on MacBook Air 2015, käyttöjärjestelmä MacOS Mojave 10.14.6.
 
-Ohjelma itse:
+[Sovellus itse:](error.go)
 
 ![screenshot-1](/assignments/day-2/screenshots/source.png)
 
@@ -33,6 +33,15 @@ Ajaminen Linuxilla:
 ![screenshot-2](/assignments/day-2/screenshots/execute-linux.png)
 
 Oho, kaikki sujui ongelmitta. :o
+Tarkistetaan vielä, että sovellus toimii tarkoituksenmukaisesti, kun merkkijonossa ei ole neljää kirjainta.
+
+[Lähdekoodi](error.go):
+
+![screenshot-1](/assignments/day-2/screenshots/source-error.png)
+
+Tulos:
+
+![screenshot-2](/assignments/day-2/screenshots/execute-darwin-error.png)
 
 ---
 
