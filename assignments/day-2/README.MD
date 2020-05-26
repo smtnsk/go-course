@@ -70,5 +70,5 @@ Tulos:\
 ---
 
 Kokeilin myös huvikseni pienentää binäärin kokoa riisumalla sen debug symboleista antamalla linkerille '-s' ja '-w' parametrit.\
-Binäärin koko pieneni n. 400 kilotavulla, eli n. 20 %:\
+Binäärin koko pieneni n. 400 kilotavulla, eli n. 19 %:\
 ![screenshot-11](/assignments/day-2/screenshots/waitgroup-stripped.png)
