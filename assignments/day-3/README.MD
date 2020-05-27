@@ -12,13 +12,27 @@ http://terokarvinen.com/2020/go-programming-course-2020-w22/#h3
 
 4. [Vapaaehtoinen, helppo ja suositeltava: Asenna Go omaan isäntäjärjestelmääsi. Senhän saa Linuxille, Windowsille ja Macille. https://golang.org/ Jos Windowsin virustorjuntaohjelmasi poistelee mielivaltaisesti tiedostoja, kerro, kuinka annoit itsellesi virustorjunnan asetuksista luvan laittaa binäärejä johonkin hakemistoon.](#tehtava4)
 
-5. [Vapaaehtoinen: Grep. Tee ohjelma, joka näyttää tekstitiedostosta vain rivit, joilla mainitaan hakusana. Kun ohjelmasi toimii ja haluat lisähaastetta, voit tehdä lisäominaisuuksia: case insensitive, regular expressions, rekursio. Jos kaipaat vielä lisähaastetta, voit kokeilla, toimiiko ohjelmasi isolla (yli 50 GB) tiedostoilla, esim. tietokantadumpeilla?](#tehtava5)
-
 ---
 
 #### <a id="tehtava1">1. Uudet kirjastot</a>
 
-(tulossa)
+Kirjoitin sovelluksen, joka lukee merkkijonoja tiedostosta, laittaa ne ["luonnolliseen lajittelujärjestykseen"](https://en.wikipedia.org/wiki/Natural_sort_order) ja kirjoittaa ne uuteen tiedostoon.
+
+Käytetyt kirjastot: os, sort, filepath, bufio, log, strings ja fmt.
+
+Lähteet: 
+* https://gobyexample.com/reading-files
+* https://gobyexample.com/writing-files
+* https://gobyexample.com/sorting
+* https://golang.org/pkg/path/filepath/
+* https://golang.org/pkg/bufio
+* https://stackoverflow.com/a/41741702
+* https://www.joeshaw.org/dont-defer-close-on-writable-files/
+
+Lähdekoodi: https://github.com/smtnsk/go-course/blob/master/assignments/day-3/sort-file.go
+
+Esimerkki toiminnasta:\
+![screenshot-1](/assignments/day-3/screenshots/sort-file.png)
 
 ---
 
@@ -47,12 +61,7 @@ En varmasti saa näitä kaikkia tehtyä, mutta koska runkona on jo toimivaa kood
 
 #### <a id="tehtava4">4. Go:n asennus</a>
 
-En käyttänyt virtuaalikonetta alunperinkään, vaan Go on asennettuna natiivisti Macille ja Alpine Linuxille:\
-![screenshot-](/assignments/day-3/screenshots/environment.png)
+Go on asennettuna natiivisti Macille ja Alpine Linuxille:\
+![screenshot-2](/assignments/day-3/screenshots/platform-info.png)
 
----
-
-#### <a id="tehtava5">5. Köyhän miehen grep</a>
-
-(teen jos ehdin, huonolta näyttää)
 
