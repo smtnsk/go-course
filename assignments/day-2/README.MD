@@ -12,7 +12,7 @@ http://terokarvinen.com/2020/go-programming-course-2020-w22/#h2
 
 ---
 
-#### <a id="tehtava1">1. Cross-compilation</a>
+#### <a id="tehtava1">1. Ristiinkääntäminen</a>
 
 Käänsin yksinkertaisen Go-sovelluksen 32- ja 64-bittisenä Macille, Windowsille ja Linuxille.\
 Alustana MacBook Air 2015 ja MacOS Mojave 10.14.6.
