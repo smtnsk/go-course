@@ -20,7 +20,7 @@ Kirjoitin sovelluksen, joka lukee merkkijonoja tiedostosta, laittaa ne ["luonnol
 
 Käytetyt kirjastot: os, sort, filepath, bufio, log, strings ja fmt.
 
-Lähteet: 
+Lähteet:\
 * https://gobyexample.com/reading-files
 * https://gobyexample.com/writing-files
 * https://gobyexample.com/sorting
