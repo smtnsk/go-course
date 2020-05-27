@@ -10,6 +10,8 @@ http://terokarvinen.com/2020/go-programming-course-2020-w22/#h1
 
 ---
 
+Tehtävän 1 lähteinä käytetty [opettajan](http://terokarvinen.com/) tunnilla näyttämiä esimerkkejä.
+
 Tehtävässä 2 käytetyt lähteet:
 * https://golang.org/pkg/strings/
 * https://golang.org/pkg/os/
