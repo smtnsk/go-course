@@ -33,9 +33,8 @@ func main() {
 	reader := bufio.NewReader(file)
 
 	for {
-		line, err = reader.ReadString('\n')
-		if err != nil {
-			file.Close() // close explicitly, because I don't trust Go
+		if line, err = reader.ReadString('\n'); err != nil {
+			file.Close()
 			break
 		}
 		line_slice = append(line_slice, line)
@@ -54,8 +53,11 @@ func main() {
 	// Write the sorted contents of the slice into a new file
 	writer := bufio.NewWriter(new_file)
 	for _, line := range line_slice {
-		_, err := writer.WriteString(line) // returns bytes written, don't need that
-		check_error(err)
+		if _, err := writer.WriteString(line); err != nil { // ignore other retval
+			new_file.Close();
+			panic(err)
+		}
+
 	}
 	writer.Flush()
 	new_file.Close()
