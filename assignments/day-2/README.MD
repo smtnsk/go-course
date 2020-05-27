@@ -60,7 +60,7 @@ Tulos:\
 Kokeilin [sync-kirjastosta](https://golang.org/pkg/sync/) [WaitGrouppia](https://golang.org/pkg/sync/#WaitGroup) soveltamalla sitä edelliseen tehtävään.
 
 [Lähdekoodi:](waitgroup.go)\
-![screenshot-9](/assignments/day-2/screenshots/waitgroup-source.png)
+![screenshot-9](/assignments/day-2/screenshots/waitgroup-src.png)
 
 Jos merkkijonot tulostettaisiin järjestyksessä, näkisimme tällä kertaa "You are not seeing these strings in the proper order either."
 
