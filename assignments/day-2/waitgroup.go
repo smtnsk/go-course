@@ -3,45 +3,25 @@ package main
 import ( . "fmt"; "sync" )
 
 func printWorker(str string, waitgroup *sync.WaitGroup) {
-	defer waitgroup.Done()
-	Println(str)
+        defer waitgroup.Done()
+        Println(str)
 }
 
 func main() {
-	var waitgroup sync.WaitGroup
+        var waitgroup sync.WaitGroup
 
-	waitgroup.Add(1)
-	go printWorker("You", &waitgroup)
+        waitgroup.Add(11)
+        go printWorker("You", &waitgroup)
+        go printWorker("are", &waitgroup)
+        go printWorker("not", &waitgroup)
+        go printWorker("seeing", &waitgroup)
+        go printWorker("these", &waitgroup)
+        go printWorker("strings", &waitgroup)
+        go printWorker("in", &waitgroup)
+        go printWorker("the", &waitgroup)
+        go printWorker("proper", &waitgroup)
+        go printWorker("order", &waitgroup)
+        go printWorker("either.", &waitgroup)
 
-	waitgroup.Add(1)
-	go printWorker("are", &waitgroup)
-
-	waitgroup.Add(1)
-	go printWorker("not", &waitgroup)
-
-	waitgroup.Add(1)
-	go printWorker("seeing", &waitgroup)
-
-	waitgroup.Add(1)
-	go printWorker("these", &waitgroup)
-
-	waitgroup.Add(1)
-	go printWorker("strings", &waitgroup)
-
-	waitgroup.Add(1)
-	go printWorker("in", &waitgroup)
-
-	waitgroup.Add(1)
-	go printWorker("the", &waitgroup)
-
-	waitgroup.Add(1)
-	go printWorker("proper", &waitgroup)
-
-	waitgroup.Add(1)
-	go printWorker("order", &waitgroup)
-
-	waitgroup.Add(1)
-	go printWorker("either.", &waitgroup)
-
-	waitgroup.Wait()
+        waitgroup.Wait()
 }
