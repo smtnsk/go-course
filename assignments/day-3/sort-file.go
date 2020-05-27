@@ -33,6 +33,7 @@ func main() {
 	reader := bufio.NewReader(file)
 
 	for {
+		// Break when there is nothing more to read
 		if line, err = reader.ReadString('\n'); err != nil {
 			file.Close()
 			break
