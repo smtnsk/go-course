@@ -38,7 +38,7 @@ Esimerkki toiminnasta:\
 
 #### <a id="tehtava2">2. Lähteet</a>
 
-[Lähteet lisätty ensimmäisen päivän tehtäville.](https://github.com/smtnsk/go-course/blob/master/assignments/day-1/README.MD).\
+[Lähteet lisätty ensimmäisen päivän tehtäville](https://github.com/smtnsk/go-course/blob/master/assignments/day-1/README.MD).\
 Toisen päivän raportissa on jo lähteet linkitetty.
 
 ---
