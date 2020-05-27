@@ -22,6 +22,5 @@ func main() {
         go printWorker("proper", &waitgroup)
         go printWorker("order", &waitgroup)
         go printWorker("either.", &waitgroup)
-
         waitgroup.Wait()
 }
