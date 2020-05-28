@@ -51,7 +51,7 @@ func main() {
 	new_file, err := os.Create(new_file_path)
 	check_error(err)
 
-        // Write the sorted contents of the slice into a new file
+        // Write the sorted contents of the slice into the new file
         writer := bufio.NewWriter(new_file)
         for _, line := range line_slice {
                 _, err := writer.WriteString(line) // ignore other retval
