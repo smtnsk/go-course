@@ -57,6 +57,6 @@ func main() {
                 _, err := writer.WriteString(line) // ignore other retval
                 check_error(err)
         }
-        writer.Flush()
-        new_file.Close()
+	check_error(writer.Flush())
+	check_error(new_file.Close())
 }
