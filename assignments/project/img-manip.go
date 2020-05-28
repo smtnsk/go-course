@@ -41,7 +41,8 @@ func main() {
 	// Decode file
 	img, format, err := image.Decode(file)
 	check_error(err)
-
+	file.Close()
+	
 	// Create a new image that matches the original's dimensions
 	size := img.Bounds().Size()
 	rect := image.Rect(0, 0, size.X, size.Y)
@@ -70,7 +71,6 @@ func main() {
 			new_img.Set(x, y, c)
 		}
 	}
-	file.Close()
 
 	// Create filename (<filename>-modified.<ext>)
 	ext := filepath.Ext(img_path)
