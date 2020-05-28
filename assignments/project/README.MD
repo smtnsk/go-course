@@ -18,7 +18,7 @@ http://terokarvinen.com/2020/go-programming-course-2020-w22/
 
 All binaries are 64-bit.
 
-* Windows: https://github.com/smtnsk/go-course/raw/master/assignments/project/greyscaler-win
+* Windows: https://github.com/smtnsk/go-course/raw/master/assignments/project/greyscaler-win.exe
 * Linux: https://github.com/smtnsk/go-course/raw/master/assignments/project/greyscaler-linux
 * Mac: https://github.com/smtnsk/go-course/raw/master/assignments/project/greyscaler-mac
 
