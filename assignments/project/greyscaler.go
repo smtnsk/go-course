@@ -8,7 +8,6 @@ import (
 	"image/color"
 	"path/filepath"
 	"fmt"
-	"log"
 	"strings"
 )
 
@@ -19,16 +18,16 @@ func check_error(err error) {
 }
 
 func greyscale(img *image.RGBA, width int, height int) {
-	// Loop through the pixels in the canvas in row-major order
+	// Loop through the canvas in row-major order
 	for y := 0; y < height; y++ {
 		for x := 0; x < width; x++ {
 			// Get the RGB values of the pixel at the current coordinates
-			pixel := img.At(x, y) // {R:81 G:132 B:53 A:255} ?
+			pixel := img.At(x, y)
 			r := pixel.(color.RGBA).R
 			g := pixel.(color.RGBA).G
 			b := pixel.(color.RGBA).B
 
-			// Poor man's greyscaling by averaging the colors
+			// Perform simple greyscaling by averaging the colors
 			grey := uint8((float64(r) + float64(g) + float64(b)) / 3.0)
 
 			// Create color struct
@@ -43,15 +42,16 @@ func greyscale(img *image.RGBA, width int, height int) {
 func main() {
 	// Check parameter(s)
 	if len(os.Args) != 2 {
-		log.Fatalln("ERROR: give a single file path as an argument")
+		fmt.Println("ERROR: give a single file path as an argument")
+		os.Exit(1)
 	}
 	img_path := os.Args[1] // os.Args[0] == program filename
 
-	// Open file
+	// Open the file
 	file, err := os.Open(img_path)
 	check_error(err)
 
-	// Decode file
+	// Decode the file
 	img, format, err := image.Decode(file)
 	check_error(err)
 	file.Close()
@@ -60,11 +60,13 @@ func main() {
 	width := img.Bounds().Size().X
 	height := img.Bounds().Size().Y
 
+	//fmt.Printf("File: %s\nFormat: %s\nDimensions: %dx%d\n", img_path, format, width, height)
+
 	// Create a new image (canvas)
 	rect := image.Rect(0, 0, width, height)
 	new_img := image.NewRGBA(rect)
 
-	// Copy pixels from the original image onto the canvas;
+	// Copy all pixels from the original image onto the canvas;
 	// Convert the color space to RGBA
 	for y := 0; y < height; y++ {
 		for x := 0; x < width; x++ {
